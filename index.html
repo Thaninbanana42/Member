@@ -346,7 +346,7 @@
                     $('#displaySection').show();
                     $('#username').text(userData.Name || "-");
                     $('#phone').html(`<i class="fas fa-phone"></i> ${userData.Tel || "-"}`);
-                    $('.profile-meta span:first').text(`😀 ${userData.Position || "-"} | รหัส ${userData.Passport || "-"}`);
+                    $('.profile-meta span:first').text(`😀 ${userData.Position || "-"} | ${userData.Passport || "-"}`);
                     $('#profilePic').attr('src', profile.pictureUrl);
 
                     const score = parseInt(userData.Score || "0", 10);
